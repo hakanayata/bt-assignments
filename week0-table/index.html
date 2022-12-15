@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        td {
+            padding: 6px 30px;
+        }
+        th {
+            height: 40px;
+        }
+        tr:nth-child(even) {
+            background-color: #cbd6ff;
+        }
+        tr:nth-child(odd) {
+            background-color: #e5eafb;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="7" style="background-color: #2b2bc2; color: white">Timetable</th>
+        </tr>
+        <tr>
+            <td>Days</td>
+            <td></td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Time</td>
+            <td>1</td>
+            <td>Turkish</td>
+            <td>Math</td>
+            <td>Turkish</td>
+            <td>Math</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Turkish</td>
+            <td>Math</td>
+            <td>Turkish</td>
+            <td>Math</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <th colspan="6">Break</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Music</td>
+            <td>Art</td>
+            <td>Music</td>
+            <td>Art</td>
+            <td>Social Science</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Music</td>
+            <td>Art</td>
+            <td>Music</td>
+            <td>Art</td>
+            <td>Social Science</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
