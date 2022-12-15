@@ -1,0 +1,8 @@
+body {
+    font-family: 'Jura', sans-serif;
+}
+
+.week-no {
+    list-style-type: none;
+    font-weight: bold;
+}
