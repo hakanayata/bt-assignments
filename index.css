@@ -7,10 +7,14 @@ body {
     font-weight: bold;
 }
 
-li:first-child{
+li {
+    line-height: 1.2rem;
+}
+
+li:first-child {
     margin-bottom: 10px;
 }
 
 li:nth-child(n+2) {
-  	margin-left: 2rem;
+    margin-left: 2rem;
 }
