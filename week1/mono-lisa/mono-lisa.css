@@ -68,3 +68,26 @@ footer {
 small {
     line-height: 6vh;
 }
+
+@media (max-width: 768px) {
+
+    li {
+        display: inline-block;
+        font-size: 0.9rem;
+        line-height: 6vh;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    aside {
+        float: left;
+        height: 76vh;
+        width: 20vw;
+        background-color: beige;
+        border: 5px solid #8d1d1d79;
+        border-radius: 10px;
+        color: #303030;
+        padding: 5px;
+        font-size: .8rem;
+    }
+}
