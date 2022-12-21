@@ -85,3 +85,18 @@ button {
     margin-bottom: .6rem;
     font-size: .9rem;
 }
+
+
+@media (max-width: 480px) {
+    #survey-form {
+        width: 280px;
+    }
+
+    .container {
+        width: 96vw;
+        height: 100vh;
+        background-color: #303030a1;
+        margin: 0 auto;
+        padding-top: .5rem;
+    }
+}
