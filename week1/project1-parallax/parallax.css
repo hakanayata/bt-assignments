@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100vh;
+}
+
+.image-container,
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-0 {
+    background-image: url(./img/bg.jpg);
+    min-height: 100vh;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .7;
+}
+
+.brand {
+    background-color: #222222;
+    padding: 2rem;
+    border-radius: 30px 0;
+    outline: .5rem inset purple;
+    outline-offset: 1.2rem;
+}
+
+.brand>h1 {
+    color: white;
+    letter-spacing: .6rem;
+    font-size: 2.5rem;
+}
+
+
+.container-1 {
+    background-image: url(./img/bg2.jpg);
+    min-height: 80vh;
+}
+
+.text-container {
+    background-color: #f1f1f1;
+    min-height: 32vh;
+    text-align: center;
+    line-height: 2rem;
+    padding: 3rem 5rem;
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 25vw;
+}
+
+.light {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dark {
+    background-color: #333333;
+    color: whitesmoke;
+}
+
+.container-2 {
+    background-image: url(./img/bg3.jpg);
+    min-height: 80vh;
+}
+
+.motto {
+    background-color: #222222;
+    border-radius: 30px 0;
+    outline: .5rem inset purple;
+    outline-offset: .3rem;
+}
+
+.container-3 {
+    background-image: url(./img/bg4.jpg);
+    min-height: 80vh;
+}
+
+.motto>p {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    padding: .6rem;
+    color: whitesmoke;
+}
+
+.container-4 {
+    background-image: url(./img/bg.jpg);
+    min-height: 100vh;
+}
+
+.motto-big {
+    padding: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .brand {
+        background-color: #222222;
+        padding: 2rem;
+        border-radius: 30px 0;
+        outline: .4rem inset purple;
+        outline-offset: .8rem;
+    }
+
+    .brand>h1 {
+        color: white;
+        letter-spacing: .3rem;
+        font-size: 1.4rem;
+    }
+
+    .text-container {
+        background-color: #f1f1f1;
+        min-height: 80vh;
+        text-align: center;
+        line-height: 2rem;
+        padding: .3rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        margin: 2rem;
+    }
+
+    .logo {
+        width: 50vw;
+    }
+
+    .light {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+    .dark {
+        background-color: #333333;
+        color: whitesmoke;
+    }
+
+    .motto {
+        background-color: #222222;
+        border-radius: 30px 0;
+        outline: .5rem inset purple;
+        outline-offset: .3rem;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    .motto>p {
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        padding: .1rem;
+        color: whitesmoke;
+    }
+}
