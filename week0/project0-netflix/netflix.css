@@ -87,14 +87,14 @@ button {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     #survey-form {
         width: 280px;
     }
 
     .container {
         width: 96vw;
-        height: 100vh;
+        height: 98vh;
         background-color: #303030a1;
         margin: 0 auto;
         padding-top: .5rem;
