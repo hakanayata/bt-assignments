@@ -11,6 +11,8 @@ body {
     letter-spacing: .5rem;
     color: whitesmoke;
     background-color: #303030;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header {
@@ -40,7 +42,8 @@ li {
 aside {
     float: left;
     height: 76vh;
-    width: 20vw;
+    /* width: 20vw; */
+    width: 25%;
     background-color: beige;
     border: 5px solid #8d1d1d79;
     border-radius: 10px;
@@ -51,7 +54,8 @@ aside {
 div {
     float: right;
     height: 76vh;
-    width: 80vw;
+    /* width: 80vw; */
+    width: 75%;
     background-image: url(./monalisa.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +87,7 @@ small {
     aside {
         float: left;
         height: 76vh;
-        width: 20vw;
+        width: 25vw;
         background-color: beige;
         border: 5px solid #8d1d1d79;
         border-radius: 10px;
@@ -97,7 +101,7 @@ small {
     div {
         float: right;
         height: 76vh;
-        width: 80vw;
+        width: 75vw;
         background-image: url(./monalisa.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
