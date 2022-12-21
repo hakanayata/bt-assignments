@@ -1,12 +1,3 @@
-/* Part 2: CSS Structure
-- Set a background and define font-color="white" 
-- Set container background color and margin 
-- Define "title" and "description" color-size-padding etc... 
-- Define "survey-form" color-size-padding etc.. 
-- Define labels color-size-padding etc... (Tips: id="name", "email", "number" ...) 
-- Set class color-size-padding-margin etc... 
-- Define id="submit" color-size-padding etc... */
-
 body {
     background-image: url(./netflix-bg.jpeg);
     color: white;
@@ -25,8 +16,7 @@ body {
     width: 96vw;
     height: 96vh;
     background-color: #303030a1;
-    margin: 0 auto;
-    padding-top: .5rem;
+    margin: .5rem auto 0;
 }
 
 h1 {
