@@ -172,4 +172,18 @@ h2 {
         padding: .1rem;
         color: whitesmoke;
     }
+
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+    .container-0,
+    .container-1,
+    .container-2,
+    .container-3,
+    .container-4 {
+        background-attachment: scroll;
+    }
 }
