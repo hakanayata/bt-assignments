@@ -1,4 +1,4 @@
-@import url(./growing-flex-vars.css);
+@import url(./trans-bar-var.css);
 
 body {
     font-family: var(--ff-montserrat);
@@ -60,4 +60,19 @@ a {
 i {
     font-size: 1.8rem;
     color: black;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        margin-top: 3rem;
+        display: flex;
+    }
+
+    nav .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
 }
