@@ -1,0 +1,63 @@
+@import url(./growing-flex-vars.css);
+
+body {
+    font-family: var(--ff-montserrat);
+}
+
+nav {
+    display: flex;
+}
+
+nav .left,
+nav .middle,
+nav .right {
+    /* width: 33vw; */
+    border: .5px solid #666;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+nav .left {
+    background-color: var(--gray-8);
+}
+
+nav .middle {
+    background-color: var(--blue-10);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 3px 9px 1px #aaa,
+        0px -1px 9px 1px #bbb;
+}
+
+nav .middle>a:hover {
+    background-color: navy;
+    color: white;
+    /* change bg-color in 2 sec, color in 1s, and wait 1 sec before starting font-color animation */
+    transition: background-color 2s, color 1s ease .5s;
+}
+
+
+nav .right {
+    background-color: var(--blue-7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .right>a:hover {
+    scale: 2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 4px;
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+i {
+    font-size: 1.8rem;
+    color: black;
+}

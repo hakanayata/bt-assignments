@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,400;1,700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+:root {
+    /* Dark shades */
+    --blue-1: hsl(205, 86%, 30%);
+    --blue-2: hsl(205, 77%, 27%);
+    --blue-3: hsl(205, 72%, 37%);
+    --blue-4: hsl(205, 63%, 48%);
+    --blue-5: hsl(205, 78%, 60%);
+
+    /* Light shades */
+    --blue-6: hsl(205, 89%, 70%);
+    --blue-7: hsl(205, 90%, 76%);
+    --blue-8: hsl(205, 86%, 81%);
+    --blue-9: hsl(205, 90%, 88%);
+    --blue-10: hsl(205, 100%, 96%);
+    --blue-11: hsl(205, 3%, 95%);
+
+    /* Dark shades for titles */
+    --gray-1: hsl(209, 61%, 16%);
+    --gray-2: hsl(211, 39%, 23%);
+    --gray-3: hsl(209, 34%, 30%);
+    --gray-4: hsl(209, 28%, 39%);
+
+    /* Colors for titles */
+    --gray-5: hsl(210, 22%, 49%);
+    --gray-6: hsl(209, 23%, 60%);
+    --gray-7: hsl(211, 27%, 70%);
+    --gray-8: hsl(210, 31%, 80%);
+    --gray-9: hsl(212, 33%, 89%);
+    --gray-10: hsl(210, 36%, 96%);
+
+    --mor-1: hsl(276, 85%, 49%);
+
+    --white: #fff;
+    --dark-red: hsl(360, 67%, 44%);
+    --light-red: hsl(360, 71%, 66%);
+    --dark-green: hsl(125, 67%, 44%);
+    --light-green: hsl(125, 71%, 66%);
+    --black: #222;
+
+
+    --dark-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    --light-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-lato: 'Lato', sans-serif;
+    --ff-open: 'Open', sans-serif;
+}
