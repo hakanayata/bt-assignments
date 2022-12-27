@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #cdcdcd;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.screen {
+    width: 300px;
+    height: 120px;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    padding: 6px 6px 12px 6px;
+}
+
+.button {
+    height: 64px;
+    width: 64px;
+    border: 2px solid #404144;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 64px;
+    font-size: 1.3rem;
+}
+
+.button.gray:hover,
+.button.orange:hover,
+.button.dark:hover {
+    border-color: white;
+}
+
+.button.gray {
+    background-color: #bcbcbc;
+    color: #404144;
+}
+
+.button.dark {
+    background-color: #404144;
+    color: #bcbcbc;
+}
+
+.button.orange {
+    background-color: #ffd000;
+    color: white;
+    font-weight: bold;
+}
+
+.button.dark.equal,
+.button.dark.dot {
+    font-weight: bold;
+}
+
+.button.dark.span2 {
+    grid-column: 1 / span 2;
+    width: 134px;
+    border-radius: 36px;
+}
