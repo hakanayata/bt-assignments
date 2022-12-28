@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    background-color: cadetblue;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    background-color: cornflowerblue;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    padding: 8px;
+}
+
+.banner-section {
+    flex-direction: column;
+    padding: 10px;
+    height: 240px;
+}
+
+.banner {
+    height: 240px;
+    background-color: darksalmon;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section {
+    flex-direction: row;
+}
+
+.card {
+    height: 120px;
+    background-color: limegreen;
+    display: flex;
+    flex: 1;
+    padding: 2px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+}
+
+.first-row,
+.second-row {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto;
+    height: 60px;
+}
+
+.box {
+    height: 60px;
+    background-color: #ffa600da;
+    display: flex;
+    flex: 1;
+    padding: 2px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.four {
+    background-color: bisque;
+}
+
+.box.span2 {
+    flex: 2;
+}
+
+.box.span3 {
+    flex: 3;
+}
+
+
+@media (max-width: 768px) {
+
+    .card-section,
+    .content-section,
+    .first-row,
+    .second-row {
+        flex-direction: column;
+    }
+
+    .card-section {
+        min-height: 360px;
+    }
+
+    .content-section {
+        min-height: 420px;
+    }
+
+    .first-row {
+        min-height: 240px;
+    }
+
+    .second-row {
+        min-height: 300px;
+    }
+
+    .box {
+        min-height: 60px;
+    }
+
+    .box.span2 {
+        flex: 1;
+    }
+
+    .box.span3 {
+        flex: 1;
+    }
+}
