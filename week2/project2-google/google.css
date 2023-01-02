@@ -119,3 +119,10 @@ input[type=search] {
 .gray-btn:hover {
     border: 1px #bdc1c6 solid;
 }
+
+@media (max-width: 768px) {
+    .blue-btn {
+        padding: 6px;
+        font-size: .8rem;
+    }
+}
