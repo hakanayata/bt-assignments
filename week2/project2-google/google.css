@@ -123,6 +123,9 @@ input[type=search] {
 @media (max-width: 768px) {
     .blue-btn {
         padding: 6px;
-        font-size: .8rem;
+    }
+
+    .navbar {
+        font-size: 11px;
     }
 }
