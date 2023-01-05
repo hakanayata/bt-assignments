@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav {
+    /* height: 80px; */
+    height: 10vh;
+    background-color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ddd;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom: 5px solid #940194;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+ul {
+    display: flex;
+    gap: 36px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+/* ? -------------- MAIN ---------------  */
+
+
+.subscription {
+    height: 8vh;
+    background-color: #445;
+    color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.subscription p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    height: 2rem;
+    border-radius: 3px;
+}
+
+input[type="email"] {
+    width: 280px;
+}
+
+input[type="submit"] {
+    background-color: #dc3914;
+    color: #ddd;
+    border: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ------------- HOME PAGE ---------------- */
+
+.bg-picture {
+    height: 42vh;
+    background-image: url(./images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* -------------- ABOUT PAGE -------------- */
+.info-section {
+    display: flex;
+    height: 72vh;
+    padding: 2rem;
+}
+.info-left {
+    flex: 3;
+    padding: 1rem 4rem;
+}
+
+.info-left > p:last-child {
+    background-color: #334;
+    color: #ddd;
+    padding: 5px;
+}
+
+.info-right {
+    flex: 1;
+    background-color: #334;
+    color: #ddd;
+    padding: 1rem;
+    height: 30vh;
+}
+
+/* ------------ SERVICE PAGE ------------ */
+.services {
+    height: 72vh;
+    display: flex;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.services-left {
+    float:left;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.services article {
+    background-color: #eee;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 4rem;
+}
+
+
+.services-right {
+    flex: 1;
+    background-color: #333;
+    color: #ddd;
+    float: right;
+    padding: .5rem;
+    height: 35vh;
+    margin-top: 1rem;
+}
+
+#get-quote-box input,
+h5,
+textarea,
+label {
+    width: 258px !important;
+    margin: .4rem;
+}
+
+label {
+    font-size: .9rem;
+}
+
+
+/* --------------- CARDS ---------------- */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+}
+
+.cards article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-height: 30vh;
+    padding: 2rem;
+}
+
+.logo {
+    height: 10vh;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+
+
+/* ? ----------- Footer ---------------- */
+
+footer {
+    width: 100vw;;
+    /* position: fixed;
+    bottom: 0; */
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #666;
+    color: #ddd;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+footer img {
+    margin-top: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        height: 16vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-bottom: 2px solid #940194;
+    }
+
+    .subscription {
+        height: 16vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .subscription p {
+        font-size: 1rem;
+    }
+
+    .sub-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    input {
+        padding: 4px;
+        height: 4vh;
+        flex: 1 1 auto;
+    }
+
+    .bg-picture {
+        height: 68vh;
+    }
+
+    .info-section {
+        flex-direction: column;
+        padding: .5rem;
+        height: auto;
+    }
+
+    .info-left {
+        padding: 1rem;
+    }
+    
+    .info-left > p:last-child {
+        background-color: rgb(7, 7, 92);
+        color: #ddd;
+    }
+    
+    .info-right {
+        flex: 1;
+        background-color: #334;
+        color: #ddd;
+        padding: 1rem;
+    }
+
+
+    /* ------------- CARDS ------------ */
+    .cards {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .cards article {
+        padding: 1rem;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+    /* ------------ SERVICE PAGE ------------ */
+    .services {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services-left {
+        float: none;
+        display: flex;
+        flex: 1;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        margin-top: 1rem;
+    }
+
+    .services article {
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+
+    .services-right {
+        float: none;
+        flex: 1;
+        background-color: #333;
+        color: #ddd;
+        float: right;
+        padding: .5rem;
+        height: auto;
+        margin: 1rem;
+    }
+
+   
+
+
+    #get-quote-box input,
+    textarea,
+    label {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    br {
+        display: none;
+    }
+
+    textarea {
+        margin-bottom: 1rem;
+    }
+
+    #get-quote-box input[type="submit"] {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+
+
+    /* ? ------------ footer ------------ */
+
+    footer {
+        height: 10vh;
+    }
+}
