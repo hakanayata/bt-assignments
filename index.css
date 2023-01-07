@@ -60,3 +60,10 @@ a.dark-mode {
     text-decoration: none;
     border-bottom: 1px solid #800080;
 }
+
+
+@media (max-width: 576px) {
+    header {
+        justify-content: space-between;
+    }
+}
