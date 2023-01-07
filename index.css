@@ -1,22 +1,34 @@
 body {
     font-family: 'Jura', sans-serif;
-    /* background-color: rgb(230, 251, 254); */
-    background-color: #112;
-    color: #ddd;
+    background-color: rgb(230, 251, 254);
+    /* background-color: #112;
+    color: #ddd; */
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    font: inherit;
+    cursor: pointer;
+    font-size: 2rem;
+    padding-left: 1.5rem;
 }
 
 .week-no {
     list-style-type: none;
     font-weight: bold;
+    margin-bottom: 10px;
+    color: navy;
 }
 
 li {
-    line-height: 1.5rem;
-}
-
-li:first-of-type {
-    margin-bottom: 10px;
-    color: #ffff00;
+    line-height: 1.4rem;
 }
 
 li:nth-child(n+2) {
@@ -24,6 +36,26 @@ li:nth-child(n+2) {
 }
 
 a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* DARK MODE */
+
+body.dark-mode {
+    font-family: 'Jura', sans-serif;
+    background-color: #112;
+    color: #ddd;
+}
+
+
+li.week-no.dark-mode {
+    margin-bottom: 10px;
+    color: #ffff00;
+}
+
+a.dark-mode {
     color: whitesmoke;
     text-decoration: none;
     border-bottom: 1px solid #800080;
