@@ -18,3 +18,13 @@
     background-repeat: no-repeat;
     color: whitesmoke;
 }
+
+.bowl {
+    height: 300px;
+}
+
+@media (max-width:576px) {
+    .bowl {
+        height: 200px;
+    }
+}
