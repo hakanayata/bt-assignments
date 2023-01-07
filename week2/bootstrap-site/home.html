@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web Site</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ? NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">Gator Tech</a>
+            <!-- *burger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- *end burger -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#staff">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ? 1ST PAGE - Banner -->
+    <section id="banner" class="container-fluid">
+        <p class="fs-2 mb-1">The IT Career of Your Dreams Starts Here!</p>
+        <p class="display-1 mb-2">Gator Tech!</p>
+        <a class="btn btn-danger py-2 px-3" href="#services">Our Services</a>
+
+    </section>
+
+    <!-- ? 2ND PAGE - Services -->
+    <section id="services" class="container-fluid">
+        <p class="display-4 text-center pt-5">Services</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, id.</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+            <div class="text-center p-5">
+                <i class="fa-solid fa-code bg-danger fa-4x p-4 rounded-circle text-light"></i>
+                <p class="fs-4 pt-3">Programming</p>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="text-center p-5">
+                <i class="fa-solid fa-palette bg-danger fa-4x p-4 rounded-circle text-light"></i>
+                <p class="fs-4 pt-3">Programming</p>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe?</p>
+            </div>
+            <div class="text-center p-5">
+                <i class="fa-solid fa-network-wired bg-danger fa-4x p-4 rounded-circle text-light"></i>
+                <p class="fs-4 pt-3">Programming</p>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ? 3RD PAGE - Portfolio -->
+    <section id="portfolio" class="bg-light container-fluid px-5">
+        <p class="display-4 text-center pt-5">Portfolio</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, id. Lorem ipsum dolor
+            sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, nulla.</p>
+        <!-- *cards -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./image/avatar1.png" class="card-img-top" alt="avatar" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/avatar2.png" class="card-img-top" alt="avatar" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/avatar3.jpg" class="card-img-top" alt="avatar" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/avatar4.png" class="card-img-top" alt="avatar" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/avatar3.jpg" class="card-img-top" alt="avatar" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./image/avatar4.png" class="card-img-top" alt="avatar" style="height: 220px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? 4RD PAGE - About US -->
+    <section id="about" class="container-fluid px-5 clearfix">
+        <p class="display-4 text-center pt-5">About Us</p>
+        <p class="text-center pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="float-none float-md-start col-md-6 px-1 py-4">
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aperiam.</p>
+            <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, voluptas!</p>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, possimus!
+            </p>
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum architecto
+                voluptate odio non in esse tenetur!</p>
+        </div>
+        <div class="col-md-6 float-none float-md-end text-center">
+            <img src="./image/aboutus.jpeg" alt="keys in a bowl" style="height: 300px;">
+        </div>
+
+    </section>
+
+    <!-- ? 5th PAGE - Our Team -->
+    <section id="staff" class="container-fluid px-5">
+        <p class="display-4 text-center pt-5">Our Team</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, id.</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+            <div class="text-center p-5 col-md-4">
+                <img src="./image/avatar1.png"
+                    class="border border-5 p-1 bg-dark-subtle border-dark-subtle rounded-circle" style="height: 240px;">
+                <p class="fs-4 pt-3">Gator Smith</p>
+                <p class="text-center">Web Developer</p>
+                <i class="fa-brands fa-twitter  bg-dark text-light rounded-circle p-2 mx-1"></i><i
+                    class="fa-brands fa-facebook  bg-dark text-light rounded-circle p-2 mx-1"></i><i
+                    class="fa-brands fa-linkedin-in  bg-dark text-light rounded-circle p-2 mx-1"></i>
+            </div>
+            <div class="text-center p-5 col-md-4">
+                <img src="./image/avatar2.png"
+                    class="border border-5 p-1 bg-dark-subtle border-dark-subtle rounded-circle" style="height: 240px;">
+                <p class="fs-4 pt-3">Alli Cale</p>
+                <p class="text-center">Full Stack Developer</p>
+                <i class="fa-brands fa-twitter  bg-dark text-light rounded-circle p-2 mx-1"></i><i
+                    class="fa-brands fa-facebook  bg-dark text-light rounded-circle p-2 mx-1"></i><i
+                    class="fa-brands fa-linkedin-in  bg-dark text-light rounded-circle p-2 mx-1"></i>
+            </div>
+            <div class="text-center p-5 col-md-4">
+                <img src="./image/avatar3.jpg"
+                    class="border border-5 p-1 bg-dark-subtle border-dark-subtle rounded-circle" style="height: 240px;">
+                <p class="fs-4 pt-3">Gabriel Lorem</p>
+                <p class="text-center">Mobile Developer</p>
+                <i class="fa-brands fa-twitter  bg-dark text-light rounded-circle p-2 mx-1"></i><i
+                    class="fa-brands fa-facebook  bg-dark text-light rounded-circle p-2 mx-1"></i><i
+                    class="fa-brands fa-linkedin-in  bg-dark text-light rounded-circle p-2 mx-1"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BRANDS -->
+    <section class="container-fluid px-5 d-flex flex-wrap justify-content-around my-5 px-5">
+        <i class="fa-brands fa-google fa-6x  py-5 text-primary"></i>
+
+        <i class="fa-brands fa-lyft fa-6x py-5"></i>
+
+        <!-- <i class="fa-brands fa-apple fa-4x"></i> -->
+
+        <i class="fa-brands fa-salesforce fa-6x py-5 text-primary"></i>
+
+        <i class="fa-brands fa-aws fa-6x py-5"></i>
+
+        <i class="fa-brands fa-stripe fa-6x py-5 text-primary-emphasis"></i>
+    </section>
+
+    <!-- ? CONTACT -->
+    <section id="contact" class="container-fluid p-5">
+        <p class="display-4 text-center">Contact Us</p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, id.</p>
+        <div class="d-flex flex-column flex-md-row">
+            <div class="row col-12 col-md-6 p-2">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="row col-12 col-md-6 p-2">
+                <div class="mb-3">
+                    <textarea class="form-control" id="textarea" rows="6" placeholder="Your message..."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <input class="btn btn-danger text-light" type="submit" value="Send Message">
+        </div>
+    </section>
+
+    <footer class="container-fluid p-5">
+        <p class="text-center mb-0">All Rights Reserved &copy; 2023</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap's JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

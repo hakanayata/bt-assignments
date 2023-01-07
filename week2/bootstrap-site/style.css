@@ -1,0 +1,20 @@
+#banner {
+    height: calc(100vh - 56px);
+    background-image: url(./image/banner.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    background-image: url(./image/map.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
