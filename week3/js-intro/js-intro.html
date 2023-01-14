@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Intro</title>
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap's JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js-intro.js"></script>
+
+</head>
+
+<body class="p-4" data-bs-theme="dark">
+    <main class="container">
+        <header class="mb-4">
+            <h1>Introduction to Programming with JavaScript</h1>
+            <p>Sorted by complexity (easiest to hardest)</p>
+        </header>
+        <section class="container task-container border border-2 border-info p-4 mb-3">
+            <h3>uniGrade</h3>
+            <p>Shows grade in letter format</p>
+            <button class="btn btn-primary" onclick="showLetterGrade()">Demo</button>
+        </section>
+        <section class="container task-container border border-2 border-info p-4 mb-3">
+            <h3>nth-month</h3>
+            <p>Converts month name to month number</p>
+            <button class="btn btn-primary" onclick="monthNumber()">Demo</button>
+        </section>
+        <section class="container task-container border border-2 border-info p-4 mb-3">
+            <h3>Am I odd?</h3>
+            <p>Shows if number odd or even</p>
+            <button class="btn btn-primary" onclick="oddOrEven()">Demo</button>
+        </section>
+        <section class="container task-container border border-2 border-info p-4 mb-3">
+            <h3>Feed me some numbers</h3>
+            <p>Shows sum, multiplication, min, max of 3 different numbers</p>
+            <button class="btn btn-primary" onclick="sumMultMinMaxOfNumbers()">Demo</button>
+        </section>
+        <section class="container task-container border border-2 border-info p-4 mb-3">
+            <h3>Celcius/Fahrenheit Converter</h3>
+            <p>Converts Celcius to Fahrenheit or vice versa</p>
+            <button class="btn btn-primary" onclick="tempConversion()">Demo</button>
+        </section>
+        <section class="container task-container border border-2 border-info p-4 mb-3">
+            <h3>Average Calculator</h3>
+            <p>Returns an average of numbers until you hit the key 'Q'</p>
+            <button class="btn btn-primary" onclick="averageOfNumbers()">Demo</button>
+        </section>
+    </main>
+</body>
+
+</html>
