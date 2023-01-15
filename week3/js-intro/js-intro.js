@@ -134,12 +134,12 @@ function oddOrEven() {
 }
 
 
-function getNumber() {
+function getNumber(message = "Please enter a number: ") {
 
     let num;
 
     do {
-        num = window.prompt("Please enter a number: ").trim()
+        num = window.prompt(`${message}`).trim()
     } while (num === '' || isNaN(num));
 
     return Number(num);
@@ -227,3 +227,90 @@ function averageOfNumbers() {
     window.alert(`Numbers: ${numbers} \nAverage: ${avr}`)
 }
 
+// GUESS NUMBER
+function getRandomNumber() {
+    return Math.round(Math.random() * 100 + 1)
+}
+
+function getUserNumber() {
+    let userNumber;
+
+    do {
+        userNumber = window.prompt("Please enter a number between 0 - 100: ").trim()
+    } while (userNumber === '' || isNaN(userNumber) || Number(userNumber) < 0 || Number(userNumber) > 100);
+
+    return Number(userNumber);
+}
+
+function oneMoreGame() {
+    let playMore;
+
+    do {
+        playMore = window.prompt("Do you want to play one more game? Press 'Y' for yes and 'N' for no...").trim().toLowerCase()
+    } while (playMore !== 'y' && playMore !== 'n')
+
+    return playMore
+
+}
+
+function guessNumber() {
+    let randomNumber = getRandomNumber();
+    console.log(randomNumber);
+    let userNumber;
+    let lives = 7;
+
+    do {
+        userNumber = getUserNumber()
+        if (userNumber > randomNumber) {
+            lives--;
+            window.alert(`That's too high! \Lives: ${lives}`)
+        } else if (userNumber < randomNumber) {
+            lives--;
+            window.alert(`That's too low! \Lives: ${lives}`)
+        }
+    } while (randomNumber !== userNumber && lives !== 0)
+
+    if (randomNumber === userNumber) {
+        window.alert("You won!")
+        if (oneMoreGame() === 'y') {
+            guessNumber()
+        }
+    } else {
+        window.alert("You lost!")
+        if (oneMoreGame() === 'y') {
+            guessNumber()
+        }
+    }
+
+}
+
+// AREA OF A TRIANGLE
+function areaTriangle() {
+    let base = getNumber("Please enter the base length: ")
+    let height = getNumber("Please enter the height: ")
+    let area = base * height / 2
+
+    window.alert(`The area of your triangle is: ${area}`)
+}
+
+function isLeapYear() {
+
+    let year = getNumber("Please enter a year: ")
+
+    if (year % 4 === 0) {
+
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                window.alert(`${year} is a leap year!`)
+            } else {
+                window.alert(`${year} is not a leap year!`)
+            }
+        } else {
+            window.alert(`${year} is a leap year!`)
+        }
+
+    } else {
+        window.alert(`${year} is not a leap year!`)
+    }
+
+}
