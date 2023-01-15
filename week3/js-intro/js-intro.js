@@ -75,9 +75,6 @@ function monthNumber() {
 
 }
 
-
-
-
 function getMonthName() {
     let monthName;
 
