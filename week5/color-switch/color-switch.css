@@ -1,0 +1,53 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #113;
+}
+
+header {
+    margin-top: 3rem;
+    text-align: center;
+    color: #fbfbfb;
+}
+
+main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+main p {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    background-color: #000;
+    font-size: 1rem;
+    color: #fbfbfb;
+}
+
+button {
+    height: 3rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    width: 16rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    border: 1px solid #afa;
+    border-radius: 20px;
+    color: #fbfbfb;
+    background-color: #000;
+}
+
+button:active {
+    scale: 1.02;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #fbfbfb;
+    color: #000;
+}
