@@ -1,0 +1,24 @@
+.cart {
+    overflow:scroll;
+    background-color: #eee;
+    height: 620px;
+}
+
+img {
+    width: 180px;
+}
+
+s {
+    font-size: 14px;
+}
+
+button[type=button] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 28px;
+    height: 34px;
+    width: 32px;
+}

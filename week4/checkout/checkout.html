@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./checkout.css">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap's JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="p-5">
+    <header class="text-center mt-4 mb-5">
+        <h1>Checkout</h1>
+    </header>
+    <!-- * ----------- MAIN ---------- -->
+    <main class="row">
+        <!-- ? ------------- LEFT SIDE --------- -->
+        <form class="col-12 col-md-8 col-lg-6 mx-auto">
+            <div class="mb-3">
+                <h5 class="text-secondary">Contact information</h5>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label text-secondary">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email..." required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label text-secondary">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your phone number..."
+                    required>
+            </div>
+            <div class="mb-3 mt-5">
+                <h5 class="text-secondary">Shipping address</h5>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label text-secondary">Full name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name..." required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label text-secondary">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your adress..." required>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label text-secondary">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter your city..." required>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <label class="form-label text-secondary" for="country">Country</label>
+                    <select class="form-select" id="country">
+                        <option selected>Germany</option>
+                        <option value="1">England</option>
+                        <option value="2">Portugal</option>
+                        <option value="3">S. Korea</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="city" class="form-label text-secondary">Post Code</label>
+                    <input type="number" class="form-control" id="city" placeholder="Enter your postal code..."
+                        required>
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label text-secondary" for="exampleCheck1">Save this information for the next
+                    time</label>
+            </div>
+            <div class="mb-3 d-flex justify-content-end">
+                <button type="submit" class="btn btn-warning text-light">Continue</button>
+            </div>
+        </form>
+        <!-- ? ------------- RIGHT SIDE --------- -->
+
+        <section class="cart col-12 col-md-8 col-lg-4 mx-auto rounded-4">
+            <div class="d-flex justify-content-start mx-auto py-4 px-2 item-div">
+                <img class="rounded-4 me-4" src="./img/photo1.png" alt="item image">
+                <div class="d-flex flex-column justify-content-between item-details">
+                    <div>
+                        <h4 class="fw-normal">Vintage Backpack</h4>
+                        <p class="text-warning fs-5 fw-bold">$54.99 <s class="text-secondary fw-normal">$94.99</s></p>
+                    </div>
+                    <div class="border border-secondary border-1 d-flex align-items-center justify-content-around rounded-3"
+                        style="width: 120px; height: 44px">
+                        <button type="button" class="btn btn-secondary">-</button>
+                        <span>1</span>
+                        <button type="button" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ! --------- item #2 in cart -->
+            <div class="d-flex justify-content-start mx-auto py-4 px-2 item-div">
+                <img class="rounded-4 me-4" src="./img/photo2.png" alt="item image">
+                <div class="d-flex flex-column justify-content-between item-details">
+                    <div>
+                        <h4 class="fw-normal">Levi Shoes</h4>
+                        <p class="text-warning fs-5 fw-bold">$54.99 <s class="text-secondary fw-normal">$94.99</s></p>
+                    </div>
+                    <div class="border border-secondary border-1 d-flex align-items-center justify-content-around rounded-3"
+                        style="width: 120px; height: 44px">
+                        <button type="button" class="btn btn-secondary">-</button>
+                        <span>1</span>
+                        <button type="button" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 mx-auto">
+                <div class="d-flex justify-content-between border-top border-secondary">
+                    <p class="fs-5 text-secondary">Shipping</p>
+                    <span class="fs-5 text-secondary">$19</span>
+                </div>
+                <div class="d-flex justify-content-between border-top border-secondary">
+                    <p class="fs-5 text-secondary">Total</p>
+                    <span class="fs-5 text-secondary">$148.98</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
