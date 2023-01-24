@@ -22,3 +22,10 @@ button[type=button] {
     height: 34px;
     width: 32px;
 }
+
+@media (width < 576px) {
+
+    img {
+        width: 150px;
+    }
+}
