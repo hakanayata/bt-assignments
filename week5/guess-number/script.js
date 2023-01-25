@@ -36,7 +36,7 @@ document.querySelector('.check').addEventListener('click', function () {
     else if (userGuess !== randomNumber) {
 
         if (score > 1) {
-            document.querySelector('.message').textContent = userGuess > randomNumber ? 'that\'s too high' : 'that\'s too low';
+            document.querySelector('.message').textContent = userGuess > randomNumber ? 'that\'s high' : 'that\'s low';
             score--;
             document.querySelector('.score').textContent = score;
             document.querySelector('.score').style.color = 'yellow';
