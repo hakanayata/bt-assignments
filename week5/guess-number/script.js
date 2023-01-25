@@ -62,7 +62,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
         if (score > highscore) {
             document.querySelector('.highscore').textContent = score;
-            // store the highscore to local disc
+            // store the highscore to local storage
             localStorage.setItem('highscore', score);
         }
 
