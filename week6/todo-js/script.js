@@ -3,9 +3,14 @@ const addBtn = document.getElementById("add-btn")
 const message = document.getElementById("message")
 const listGroup = document.getElementById("list-group")
 const list = document.getElementById("list")
+const totalTasks = document.getElementById("total-tasks")
+const tasksDone = document.getElementById("tasks-done")
 
 let idNoList = []
 let idNo = 0
+
+let todoCounter = 0
+let markedDone = 0
 
 function hideListIfEmpty() {
     if (listGroup.innerText === '') {
@@ -38,6 +43,8 @@ addBtn.addEventListener('click', () => {
         list.style.visibility = 'visible'
         // create new list item
         createNewListItem()
+        // update total number of tasks
+        totalTasks.innerText = listGroup.childElementCount
         // flush the input field
         newTask.value = ''
         message.textContent = ''
@@ -108,20 +115,35 @@ function createNewListItem() {
 function markDone(id) {
     id = Number(id.split("-")[1])
     el = document.getElementById(`task-${id}`)
-    console.log(el.style.textDecoration)
+
     if (el.style.textDecoration === "line-through") {
         el.style.color = "#212529"
         el.style.textDecoration = "none"
+        // update number of tasks done
+        markedDone--;
+        tasksDone.innerText = markedDone
     } else {
         el.style.color = "rgb(170,170,170)"
         el.style.textDecoration = "line-through"
+        // update number of tasks done
+        markedDone++
+        tasksDone.innerText = markedDone
     }
 }
 
 function deleteItem(id) {
     id = Number(id.split("-")[1])
     el = document.getElementById(`task-${id}`)
+    // update total number of tasks marked done
+
+    if (el.style.textDecoration === "line-through") {
+        markedDone--;
+    }
     el.remove()
+    tasksDone.innerText = markedDone
+
+    // update total number of tasks
+    totalTasks.innerText = listGroup.childElementCount
 
     hideListIfEmpty()
 
