@@ -2,22 +2,21 @@ const newTask = document.getElementById("new-task")
 const addBtn = document.getElementById("add-btn")
 const message = document.getElementById("message")
 const listGroup = document.getElementById("list-group")
+const list = document.getElementById("list")
 
 let idNoList = []
 let idNo = 0
 
-function showPlaceholderItem() {
+function hideListIfEmpty() {
     if (listGroup.innerText === '') {
-        let placeholderItem = document.createElement("li")
-        placeholderItem.setAttribute("class", "d-flex align-items-center justify-content-between list-group-item")
-        placeholderItem.setAttribute("id", "place-holder-item")
-        placeholderItem.textContent = "Please add new task to update your list..."
-        listGroup.appendChild(placeholderItem)
+        list.style.visibility = "hidden"
+    } else {
+        list.style.visibility = "visible"
     }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    showPlaceholderItem()
+    hideListIfEmpty()
 })
 
 newTask.addEventListener('keypress', (e) => {
@@ -35,6 +34,8 @@ addBtn.addEventListener('click', () => {
             document.getElementById("place-holder-item").remove()
         }
 
+        // make div visible
+        list.style.visibility = 'visible'
         // create new list item
         createNewListItem()
         // flush the input field
@@ -45,7 +46,6 @@ addBtn.addEventListener('click', () => {
         message.textContent = "Invalid Input!"
     }
 })
-
 
 
 function getNewID() {
@@ -123,11 +123,8 @@ function deleteItem(id) {
     el = document.getElementById(`task-${id}`)
     el.remove()
 
-    if (!document.getElementById("place-holder-item")) {
-        showPlaceholderItem()
-    }
+    hideListIfEmpty()
 
     // remove its ID from idNoList
     idNoList = idNoList.filter(item => item != id)
 }
-// todo: remove message 
