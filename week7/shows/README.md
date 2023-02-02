@@ -9,10 +9,10 @@ A web page that lists 77 TV Shows fetched from a .json file
 
 ## Goal
 To get a better grasp of: 
-- How to work with API's
-- Async functions, and await keyword
-- Fetch functions
-- Promise
+- How to work with APIs
+- `async functions, and `await` keyword
+- `fetch` functions
+- Concept of Promise
 - How to use try-catch block in order to handle errors
 - How to use "optional chaining"
 
