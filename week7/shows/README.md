@@ -1,7 +1,7 @@
 # TV Shows
 
 ## Demo
-- [Netlify](https://shows-hakan.netlify.app)
+- [Netlify](https://bt-fe-assignments.netlify.app/week7/shows/index.html)
 
 
 ## Description
