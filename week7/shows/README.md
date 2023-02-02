@@ -10,7 +10,7 @@ A web page that lists 77 TV Shows fetched from a .json file
 ## Goal
 To get a better grasp of: 
 - How to work with APIs
-- `async functions, and `await` keyword
+- `async` functions, and `await` keyword
 - `fetch` functions
 - Concept of Promise
 - How to use try-catch block in order to handle errors
@@ -31,7 +31,7 @@ src=`${show.image.medium}`
 ```
 Code with optional chaining:
 ```javascript
-src=`src=${show.image?.medium || show.show?.image?.medium`
+src=`${show.image?.medium || show.show?.image?.medium}`
 ```
 2. Second problem: One of the 77 objects does have a "image" value of `null`
 
@@ -39,11 +39,11 @@ src=`src=${show.image?.medium || show.show?.image?.medium`
 
 Original code which yields error:
 ```javascript
-src=`src=${show.image?.medium || show.show?.image?.medium`
+src=`${show.image?.medium || show.show?.image?.medium}`
 ```
 Code with workaround:
 ```javascript
-src=`src=${show.image?.medium || show.show?.image?.medium || 'placeholder image url'`
+src=`${show.image?.medium || show.show?.image?.medium || 'placeholder image url'}`
 ```
 
 ##### E N D
