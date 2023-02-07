@@ -22,12 +22,18 @@
 <body data-bs-theme="dark">
 
     <nav class="navbar bg-warning mb-5">
-        <div class="container-fluid d-flex justify-content-center">
-            <a class="navbar-brand text-danger fs-3 fw-bold">TV Shows</a>
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-dark fs-3 fw-bold">TV Shows</a>
+            <form class="d-flex" role="search" id="form">
+                <input class="form-control me-2" type="search" placeholder="Search TV Show" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+
         </div>
     </nav>
 
-    <main class="container d-flex flex-wrap justify-content-center align-items-center gap-5">
+    <main class="container d-flex flex-wrap justify-content-center align-items-center gap-5" id="main">
 
     </main>
 
