@@ -12,8 +12,11 @@ document.querySelectorAll("li").forEach((li) => {
 const random_cuisine = get_random_cuisine()
 let fetch_result = []
 // -------------
-getCuisineData()
 
+getCuisineData()
+style_active_cuisine(random_cuisine)
+
+// When a flag is clicked, bring user to that cuisine's meals
 flags.forEach((flag) => {
     flag.addEventListener('click', () => {
         getCuisineData(flag.id)
@@ -22,7 +25,7 @@ flags.forEach((flag) => {
 
 // SEARCH
 form.addEventListener('input', (e) => {
-
+    // displays searched element on each input
     const search_text = e.target.value.toLowerCase()
     const filtered_meals = fetch_result.filter(meal => meal.strMeal.toLowerCase().includes(search_text))
 
@@ -30,9 +33,9 @@ form.addEventListener('input', (e) => {
 
 })
 
-
 // FUNCTIONS
 async function getCuisineData(cuisine = random_cuisine) {
+    // gets data with fetch, calls display function
     try {
         const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${cuisine}`)
         if (!res.ok) { throw new Error("Could not fetch data") }
@@ -41,6 +44,7 @@ async function getCuisineData(cuisine = random_cuisine) {
         // console.log(fetch_result)
 
         displayCuisines(fetch_result)
+        style_active_cuisine(cuisine)
         // return fetch_result
     } catch (error) {
         console.log(error)
@@ -48,6 +52,7 @@ async function getCuisineData(cuisine = random_cuisine) {
 }
 
 function displayCuisines(meals) {
+    // displays data on the page
 
     content.innerHTML = ''
 
@@ -76,6 +81,18 @@ function displayCuisines(meals) {
 }
 
 function get_random_cuisine() {
+    // returns random cuisine
     const index = Math.round(Math.random() * 4)
     return cuisines[index]
+}
+
+function style_active_cuisine(cuisine) {
+    // gives a style to active list element
+    flags.forEach(flag => {
+        if (flag.classList.contains("active")) {
+            flag.classList.remove("active")
+        }
+    })
+    const active_cuisine = Array.from(flags).filter(f => f.id == cuisine)
+    active_cuisine[0].classList.add("active")
 }
